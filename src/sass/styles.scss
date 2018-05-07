@@ -1,0 +1,323 @@
+@import "mixins";
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700');
+
+/*link style*/
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/*variables*/
+$primary-color: #d85f00;
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/*Start main*/
+.mainPage {
+  background: #cfd2d6 url("../img/main.png") no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 2px 2px 4px #ccc;
+    text-align: center;
+
+    &__greeting {
+      font: 600 65px "Work Sans", sans-serif;
+      color: #343434;
+      line-height: 1.093;
+      margin-bottom: 20px;
+    }
+
+    &__initials {
+      font: 600 55px "Work Sans", sans-serif;
+      color: #343434;
+      line-height: 1.093;
+      margin-bottom: 15px;
+    }
+
+    &__position {
+      font: 600 30px "Work Sans", sans-serif;
+      color: #343434;
+      line-height: 1.093;
+      margin-bottom: 60px;
+    }
+  }
+}
+.btn {
+  font-size: 20px;
+  font-weight: 500;
+  width: 300px;
+  height: 55px;
+  background-color: $primary-color;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: none;
+}
+
+/*popup start*/
+@import "https://fonts.googleapis.com/css?family=Raleway";
+* {
+  box-sizing: border-box;
+}
+
+#contact {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  margin: 4em auto;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background: teal;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+#contact:hover {
+  background: #666;
+}
+
+#contact:active {
+  background: #444;
+}
+
+#contactForm {
+  display: none;
+
+  border: 6px solid #323;
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%)
+
+}
+
+input, textarea {
+  margin: .8em auto;
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+
+  display: block;
+  width: 280px;
+  padding: .4em;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.formBtn {
+  width: 140px;
+  display: inline-block;
+
+  background: teal;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
+}
+
+/*popup end*/
+/*End main*/
+
+/*start section aboutMe*/
+.aboutMe {
+  background-color: #f7f7f7;
+  font-family: "Work Sans", sans-serif;
+
+  .container {
+    margin-left: 10%;
+    padding: 40px 0 40px 20px;
+    border-left: 1px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include bp(xs) {
+      margin: 0;
+    }
+
+    .about__wrap {
+      display: flex;
+      text-align: center;
+      @include bp(xs) {
+        display: block;
+      }
+
+      .myImage > img {
+
+      }
+    }
+
+  }
+
+  &__skills {
+    @include bp(xs) {
+      width: 100%;
+    }
+
+    &-description {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &-text {
+      margin: 15px 0 15px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    &-listOfSkills li {
+      margin-bottom: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    &-listOfSkills li:hover {
+      transform: rotateX(30deg);
+      display: inline-block;
+
+    }
+  }
+
+  &__basic {
+    font-size: 30px;
+    color: $primary-color;
+    font-weight: 600;
+    border-left: 3px solid $primary-color;
+    margin-left: -21px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+}
+/*end section aboutMe*/
+
+
+/*section portfolio start*/
+.portfolio {
+  background: url("../img/background.jpg") no-repeat fixed;
+  padding: 70px 0;
+
+
+  &__slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__basic {
+    border-left: 3px solid $primary-color;
+    margin-left: 40%;
+    text-transform: uppercase;
+
+    @include bp(xm) {
+      text-align: center;
+      margin-left: 18%;
+    }
+  }
+
+  &__slider a img {
+    width: 80%;
+    height: 200px;
+    margin:  0 auto;
+  }
+
+  &__slider a:hover {
+    box-shadow: 1px 1px 10px #000;
+    transition: 1s;
+    transform: scalex(1.1);
+  }
+}
+/*section portfolio end*/
+
+
+/*footer start*/
+.footerContacts {
+  height: 100vh;
+  background: url("../img/shadow.png") no-repeat, url("../img/footer.png") no-repeat;
+  background-size: cover;
+
+  &__btn {
+    margin: 0 auto;
+  }
+
+  &__container {
+    align-self: center;
+
+    &-decision {
+      text-align: center;
+      padding-top: 50px;
+      color: #fff;
+      font-size: 26px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 35px;
+    }
+
+    &-thin {
+      font-weight: 300;
+    }
+
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+
+    @include bp(xm) {
+      display: block;
+      text-align: center;
+    }
+
+    .general {
+      font-weight: 500;
+      font-size: 21px;
+      color: #fff;
+
+      @include bp(xm) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &-email {
+      margin: 0 60px;
+
+    }
+
+    &-email > a {
+      color: #ffffff;
+    }
+  }
+}
+/*footer end*/

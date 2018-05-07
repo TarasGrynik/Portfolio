@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700");@import "https://fonts.googleapis.com/css?family=Raleway";a{text-decoration:none}
+img{width:100%}body{font-family:"Work Sans",sans-serif}.mainPage{background:#cfd2d6 url("../img/main.png") no-repeat fixed;background-size:cover;height:100vh;display:flex;align-items:center;justify-content:center}
+.mainPage .inform{display:flex;flex-direction:column;align-items:center;text-shadow:2px 2px 4px #ccc}
+.mainPage .inform__greeting{font:600 65px "Work Sans",sans-serif;color:#343434;line-height:1.093;margin-bottom:20px}
+.mainPage .inform__initials{font:600 55px "Work Sans",sans-serif;color:#343434;line-height:1.093;margin-bottom:15px}
+.mainPage .inform__position{font:600 30px "Work Sans",sans-serif;color:#343434;line-height:1.093;margin-bottom:60px}
+.btn{font-size:20px;font-weight:500;width:300px;height:55px;background-color:#d85f00;text-align:center;color:#fff;text-transform:uppercase;border-radius:4px;display:flex;justify-content:center;align-items:center;text-shadow:none}
+*{box-sizing:border-box}#contact{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;margin:4em auto;width:100px;height:30px;line-height:30px;background:teal;color:white;font-weight:700;text-align:center;cursor:pointer;border:1px solid white}
+#contact:hover{background:#666}#contact:active{background:#444}#contactForm{display:none;border:6px solid #323;padding:2em;width:400px;text-align:center;background:#fff;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%)}
+input,textarea{margin:.8em auto;font-family:inherit;text-transform:inherit;font-size:inherit;display:block;width:280px;padding:.4em}
+textarea{height:80px;resize:none}.formBtn{width:140px;display:inline-block;background:teal;color:#fff;font-weight:100;font-size:1.2em;border:0;height:30px}
+.aboutMe{background-color:#f7f7f7;font-family:"Work Sans",sans-serif}
+.aboutMe .container{margin-left:10%;padding:40px 0 40px 20px;border-left:1px solid grey;display:flex;flex-wrap:wrap;justify-content:space-between}
+@media(max-width:600px){.aboutMe .container{margin:0}}.aboutMe .container .about__wrap{display:flex;text-align:center}
+@media(max-width:600px){.aboutMe .container .about__wrap{display:block}}@media(max-width:600px){.aboutMe__skills{width:100%}
+}.aboutMe__skills-description{font-size:18px;line-height:30px}.aboutMe__skills-text{margin:15px 0 15px 0;font-size:18px;font-weight:600}
+.aboutMe__skills-listOfSkills li{margin-bottom:10px;font-size:16px;cursor:pointer}
+.aboutMe__skills-listOfSkills li:hover{transform:rotateX(30deg);display:inline-block}
+.aboutMe__basic{font-size:30px;color:#d85f00;font-weight:600;border-left:3px solid #d85f00;margin-left:-21px;padding-left:20px;margin-bottom:30px;text-transform:uppercase}
+.portfolio{background:url("../img/background.jpg") no-repeat fixed;padding:70px 0}
+.portfolio__slider{width:80%;margin:0 auto}.portfolio__basic{border-left:3px solid #d85f00;margin-left:40%;text-transform:uppercase}
+.portfolio__slider a img{width:80%;height:200px;margin:0 auto}.portfolio__slider a:hover{box-shadow:1px 1px 10px #000;transition:1s;transform:scalex(1.1)}
+.footerContacts{height:100vh;background:url("../img/shadow.png") no-repeat,url("../img/footer.png") no-repeat;background-size:cover}
+.footerContacts__btn{margin:0 auto}.footerContacts__container{align-self:center}.footerContacts__container-decision{text-align:center;padding-top:50px;color:#fff;font-size:26px;text-transform:uppercase;font-weight:500;margin-bottom:35px}
+.footerContacts__container-thin{font-weight:300}.footerContacts__contacts{display:flex;justify-content:center;margin-bottom:70px}
+@media(max-width:1250px){.footerContacts__contacts{display:block;text-align:center}
+}.footerContacts__contacts .general{font-weight:500;font-size:21px;color:#fff}@media(max-width:1250px){.footerContacts__contacts .general{margin-bottom:15px}
+}.footerContacts__contacts-email{margin:0 60px}.footerContacts__contacts-email>a{color:#fff}

@@ -1,0 +1,13 @@
+//mixin media queri
+
+@mixin bp($point) {
+  @if $point == xl {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == xm {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == xs {
+    @media (max-width: 600px)  { @content; }
+  }
+}
